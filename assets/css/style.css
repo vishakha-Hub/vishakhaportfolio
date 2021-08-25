@@ -1403,6 +1403,80 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /** CaseStudy-1 Nomad **/
 /*--------------------------------------------------------------
+# Nomad hero Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#nomad-hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 140px 0 100px 0;
+  margin-bottom: -30px;
+}
+
+#nomad-hero::before {
+  content: '';
+  position: absolute;
+  right: -100%;
+  width: 250%;
+  height: 200%;
+  z-index: -1;
+  background-color: #19647E;
+  clip-path: polygon(0 0, 100% 0, 100% 74%, 0 60%);
+
+}
+
+#nomad-hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+#nomad-hero h2 {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+#nomad-hero h6 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.title {
+  color: #19647E;
+}
+
+@media (max-width: 991px) {
+  #nomad-hero {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #nomad-hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #nomad-hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.designprocess{ 
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
 .gallery {
@@ -1417,6 +1491,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 .gallery .owl-item {
   transition: 0.3s ease-in-out;
 }
+img{
+  border-radius: 18px;
+}
 
 .gallery .owl-dot {
   display: inline-block;
@@ -1428,11 +1505,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .gallery .owl-dot.active {
-  background-color: #5777ba !important;
+  background-color: #19647E !important;
 }
 
 .gallery .gallery-carousel {
   padding-top: 30px;
+  margin-bottom: 30px;
 }
 
 .gallery .gallery-carousel .owl-stage-outer {
@@ -1441,7 +1519,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (min-width: 992px) {
   .gallery .gallery-carousel .center {
-    border: 6px solid #5777ba;
+    border: 6px solid #19647E;
     padding: 4px;
     background: #fff;
     z-index: 1;
@@ -1450,5 +1528,4 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-radius: 25px;
   }
 }
-
 
